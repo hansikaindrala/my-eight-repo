@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Practice & Job Roles Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <span class="app-title">InterView PREPPER</span>
+        </div>
+        <div class="header-right">
+            <button class="header-btn" onclick="window.location.href='login-register.html'">Login</button>
+            <button class="header-btn" onclick="window.location.href='login-register.html'">Register</button>
+        </div>
+    </header>
+    <div class="subtitle small-text">Your one-stop destination for interview preparation and latest job postings</div>
+    <main class="small-text">
+        <section id="practice-questions">
+            <h2>Interview Practice Questions</h2>
+            <ul class="questions-list">
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What are your strengths and weaknesses?
+                    <div class="answer" style="display:none;">
+                        <p><strong>Strengths:</strong> I am highly organized, a quick learner, and a strong team player.<br>
+                        <strong>Weaknesses:</strong> I can be a perfectionist, but I am learning to balance quality with efficiency.<br>
+                        I regularly seek feedback to improve myself.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Describe a challenging project you worked on and how you handled it.
+                    <div class="answer" style="display:none;">
+                        <p>I once led a project with a tight deadline and limited resources.<br>
+                        I prioritized tasks, delegated effectively, and communicated clearly with my team.<br>
+                        We delivered the project on time and exceeded client expectations.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you stay updated with the latest technology trends?
+                    <div class="answer" style="display:none;">
+                        <p>I follow industry blogs, attend webinars, and participate in online courses.<br>
+                        I am active in tech communities and forums.<br>
+                        I also experiment with new tools and frameworks in my personal projects.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Explain the difference between REST and SOAP APIs.
+                    <div class="answer" style="display:none;">
+                        <p>REST is lightweight, uses HTTP, and is easier to implement.<br>
+                        SOAP is protocol-based, more secure, and supports ACID compliance.<br>
+                        REST is preferred for web services, while SOAP is used in enterprise solutions.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you prioritize tasks when working on multiple projects?
+                    <div class="answer" style="display:none;">
+                        <p>I assess deadlines, project impact, and urgency.<br>
+                        I use tools like Trello or Asana to organize tasks.<br>
+                        Regular check-ins help me adjust priorities as needed.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What is your experience with remote work and collaboration tools?
+                    <div class="answer" style="display:none;">
+                        <p>I have worked remotely using tools like Slack, Zoom, and Google Workspace.<br>
+                        I am comfortable with asynchronous communication.<br>
+                        I ensure regular updates and clear documentation for team alignment.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you handle feedback and criticism?
+                    <div class="answer" style="display:none;">
+                        <p>I view feedback as an opportunity to grow.<br>
+                        I listen actively, ask clarifying questions, and implement suggestions.<br>
+                        I thank the person for their input and reflect on how to improve.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Describe a time you resolved a conflict in a team.
+                    <div class="answer" style="display:none;">
+                        <p>I encouraged open communication and listened to all perspectives.<br>
+                        I facilitated a meeting to address concerns and find common ground.<br>
+                        The team reached a consensus and collaboration improved.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What motivates you to perform at your best?
+                    <div class="answer" style="display:none;">
+                        <p>I am motivated by challenging goals and opportunities to learn.<br>
+                        Recognition for my work and positive team dynamics inspire me.<br>
+                        I set personal milestones to track my progress.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Where do you see yourself in five years?
+                    <div class="answer" style="display:none;">
+                        <p>I aim to take on leadership roles and contribute to impactful projects.<br>
+                        I plan to expand my technical and soft skills.<br>
+                        I hope to mentor others and help them grow in their careers.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="job-roles" class="centered-job-roles">
+            <h2>Latest Job Roles (from Daily News)</h2>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>Software Engineer - ABC Tech</h3>
+                <div class="job-meta"><span>Remote</span> | <span>Posted: August 4, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>ABC Tech is looking for a Software Engineer with experience in Python, JavaScript, and cloud technologies. Apply by August 20, 2025.</p>
+                </div>
+            </div>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>Data Analyst - DataWiz</h3>
+                <div class="job-meta"><span>New York, NY</span> | <span>Posted: August 3, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>DataWiz is hiring a Data Analyst to work with large datasets and provide actionable insights. SQL and Tableau experience required.</p>
+                </div>
+            </div>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>UI/UX Designer - Creative Minds</h3>
+                <div class="job-meta"><span>San Francisco, CA</span> | <span>Posted: August 2, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>Creative Minds seeks a UI/UX Designer with a strong portfolio and experience in Figma or Adobe XD. Apply now!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer small-text">
+        <div class="footer-left">
+            <h4>Contact Us</h4>
+            <p>Email: info@interviewprepper.com</p>
+            <p>Phone: +1 234 567 8901</p>
+            <p>Address: 123 Prepper Lane, Tech City, USA</p>
+        </div>
+        <div class="footer-right">
+            <h4>Feedback</h4>
+            <form class="feedback-form" onsubmit="event.preventDefault();alert('Thank you for your feedback!');this.reset();">
+                <textarea placeholder="Your feedback..." required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+    function toggleAnswer(item) {
+        var answer = item.querySelector('.answer');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            answer.classList.add('fade-in');
+        } else {
+            answer.style.display = 'none';
+            answer.classList.remove('fade-in');
+        }
+    }
+    function toggleJobDesc(item) {
+        var desc = item.querySelector('.job-desc');
+        if (desc.style.display === 'none') {
+            desc.style.display = 'block';
+            desc.classList.add('fade-in');
+        } else {
+            desc.style.display = 'none';
+            desc.classList.remove('fade-in');
+        }
+    }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - InterView PREPPER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <span class="app-title">InterView PREPPER</span>
+        </div>
+    </header>
+    <main class="login-main animated-login">
+        <div class="login-container animated-login-box">
+            <div class="tab-buttons">
+                <button class="header-btn active" id="loginTabBtn" onclick="showTab('login')">Login</button>
+                <button class="header-btn" id="registerTabBtn" onclick="showTab('register')">Register</button>
+            </div>
+            <div id="loginTab" class="tab-content">
+                <h2>Login</h2>
+                <form onsubmit="event.preventDefault();alert('Login is a demo only.');">
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <button type="submit" class="header-btn">Login</button>
+                </form>
+            </div>
+            <div id="registerTab" class="tab-content" style="display:none;">
+                <h2>Register</h2>
+                <form onsubmit="event.preventDefault();alert('Registration is a demo only.');">
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <button type="submit" class="header-btn">Register</button>
+                </form>
+            </div>
+            <p class="back-link"><a href="index.html">&larr; Back to Home</a></p>
+        </div>
+    </main>
+    <script>
+    function showTab(tab) {
+        document.getElementById('loginTab').style.display = tab === 'login' ? 'block' : 'none';
+        document.getElementById('registerTab').style.display = tab === 'register' ? 'block' : 'none';
+        document.getElementById('loginTabBtn').classList.toggle('active', tab === 'login');
+        document.getElementById('registerTabBtn').classList.toggle('active', tab === 'register');
+    }
+    </script>
+</body>
+</html>
+centered-job-roles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+    animation: fadeInUp 1.2s;
+}
+.centered-job-roles h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem !important;
+    color: #3a7bd5;
+    letter-spacing: 1px;
+}
+.animated-listing {
+    width: 100%;
+    max-width: 500px;
+    margin: 0.7rem auto 1.2rem auto;
+    cursor: pointer;
+    transition: box-shadow 0.25s, transform 0.18s;
+    animation: fadeInUp 0.8s;
+    position: relative;
+}
+.animated-listing:hover {
+    box-shadow: 0 8px 32px #00d2ff33;
+    transform: scale(1.03) translateY(-2px);
+    background: #f0f8ff;
+}
+.job-meta {
+    font-size: 0.95em;
+    color: #0072ff;
+    margin-bottom: 0.2rem;
+    margin-top: -0.5rem;
+    opacity: 0.8;
+}
+.job-desc {
+    background: #f7fbff;
+    color: #222;
+    border-left: 3px solid #3a7bd5;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    padding: 0.7rem 1rem 0.7rem 1.2rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.98rem;
+    box-shadow: 0 2px 8px #3a7bd511;
+    animation: fadeIn 0.5s;
+}
+.animated-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    animation: fadeInUp 1.2s;
+}
+.animated-login-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #3a7bd544;
+    padding: 2.5rem 2.8rem;
+    min-width: 340px;
+    text-align: center;
+    animation: popIn 1.1s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    z-index: 2;
+}
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.tab-buttons .header-btn.active {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #00d2ff33;
+    transform: scale(1.08);
+}
+.tab-content {
+    animation: fadeIn 0.7s;
+}
+@keyframes popIn {
+    0% { opacity: 0; transform: scale(0.7); }
+    80% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.app-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 6px #00d2ff44;
+    animation: slideInLeft 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: color 0.3s, text-shadow 0.3s;
+    cursor: pointer;
+    line-height: 1.1;
+}
+
+.small-text, .small-text * {
+    font-size: 0.92rem !important;
+    line-height: 1.3 !important;
+}
+
+.main-header .header-right .header-btn {
+    font-size: 0.98rem;
+    padding: 0.45rem 1.1rem;
+}
+
+main.small-text h2, main.small-text h3, main.small-text h4 {
+    font-size: 1.1rem !important;
+}
+
+main.small-text ul.questions-list {
+    font-size: 1rem !important;
+}
+
+.main-footer.small-text h4 {
+    font-size: 1rem !important;
+}
+
+.main-footer.small-text p, .main-footer.small-text textarea, .main-footer.small-text button {
+    font-size: 0.92rem !important;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #e0eafc 100%);
+    margin: 0;
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+    color: #fff;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.app-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 6px #00d2ff44;
+    animation: slideInLeft 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: color 0.3s, text-shadow 0.3s;
+    cursor: pointer;
+}
+.app-title:hover {
+    color: #fff200;
+    text-shadow: 0 0 16px #fff20099, 1px 1px 6px #00d2ff44;
+    animation: pulse 0.7s;
+}
+
+.header-right {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    height: 100%;
+}
+
+.header-btn {
+    background: linear-gradient(90deg, #fff 0%, #e0eafc 100%);
+    color: #3a7bd5;
+    border: none;
+    border-radius: 24px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.08rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #00d2ff22;
+    transition: background 0.25s, color 0.25s, transform 0.18s, box-shadow 0.25s;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+.header-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(58,123,213,0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    z-index: 0;
+}
+.header-btn:hover::after {
+    width: 220%;
+    height: 600%;
+}
+.header-btn:hover {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+    color: #fff;
+    transform: scale(1.09) rotate(-1deg);
+    box-shadow: 0 6px 24px #00d2ff44;
+}
+.header-btn:active {
+    transform: scale(0.97);
+    background: #00d2ff;
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 0 #fff20099; }
+    50% { text-shadow: 0 0 16px #fff20099; }
+    100% { text-shadow: 0 0 0 #fff20099; }
+}
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.job-listing {
+    background: #e0eafc;
+    border-left: 5px solid #3a7bd5;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,210,255,0.05);
+}
+
+.job-listing h3 {
+    margin: 0 0 0.3rem 0;
+    color: #0072ff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #3a7bd5;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    #practice-questions h2, #job-roles h2 {
+        font-size: 1.2rem;
+    }
+}
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\User\\OneDrive\\Desktop\\hansika\\interview-portal\\index.html"
+        }
+    ]
+}
