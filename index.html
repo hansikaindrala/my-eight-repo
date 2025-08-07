@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Practice & Job Roles Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <span class="app-title">InterView PREPPER</span>
+        </div>
+        <div class="header-right">
+            <button class="header-btn" onclick="window.location.href='login-register.html'">Login</button>
+            <button class="header-btn" onclick="window.location.href='login-register.html'">Register</button>
+        </div>
+    </header>
+    <div class="subtitle small-text">Your one-stop destination for interview preparation and latest job postings</div>
+    <main class="small-text">
+        <section id="practice-questions">
+            <h2>Interview Practice Questions</h2>
+            <ul class="questions-list">
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What are your strengths and weaknesses?
+                    <div class="answer" style="display:none;">
+                        <p><strong>Strengths:</strong> I am highly organized, a quick learner, and a strong team player.<br>
+                        <strong>Weaknesses:</strong> I can be a perfectionist, but I am learning to balance quality with efficiency.<br>
+                        I regularly seek feedback to improve myself.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Describe a challenging project you worked on and how you handled it.
+                    <div class="answer" style="display:none;">
+                        <p>I once led a project with a tight deadline and limited resources.<br>
+                        I prioritized tasks, delegated effectively, and communicated clearly with my team.<br>
+                        We delivered the project on time and exceeded client expectations.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you stay updated with the latest technology trends?
+                    <div class="answer" style="display:none;">
+                        <p>I follow industry blogs, attend webinars, and participate in online courses.<br>
+                        I am active in tech communities and forums.<br>
+                        I also experiment with new tools and frameworks in my personal projects.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Explain the difference between REST and SOAP APIs.
+                    <div class="answer" style="display:none;">
+                        <p>REST is lightweight, uses HTTP, and is easier to implement.<br>
+                        SOAP is protocol-based, more secure, and supports ACID compliance.<br>
+                        REST is preferred for web services, while SOAP is used in enterprise solutions.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you prioritize tasks when working on multiple projects?
+                    <div class="answer" style="display:none;">
+                        <p>I assess deadlines, project impact, and urgency.<br>
+                        I use tools like Trello or Asana to organize tasks.<br>
+                        Regular check-ins help me adjust priorities as needed.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What is your experience with remote work and collaboration tools?
+                    <div class="answer" style="display:none;">
+                        <p>I have worked remotely using tools like Slack, Zoom, and Google Workspace.<br>
+                        I am comfortable with asynchronous communication.<br>
+                        I ensure regular updates and clear documentation for team alignment.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    How do you handle feedback and criticism?
+                    <div class="answer" style="display:none;">
+                        <p>I view feedback as an opportunity to grow.<br>
+                        I listen actively, ask clarifying questions, and implement suggestions.<br>
+                        I thank the person for their input and reflect on how to improve.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Describe a time you resolved a conflict in a team.
+                    <div class="answer" style="display:none;">
+                        <p>I encouraged open communication and listened to all perspectives.<br>
+                        I facilitated a meeting to address concerns and find common ground.<br>
+                        The team reached a consensus and collaboration improved.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    What motivates you to perform at your best?
+                    <div class="answer" style="display:none;">
+                        <p>I am motivated by challenging goals and opportunities to learn.<br>
+                        Recognition for my work and positive team dynamics inspire me.<br>
+                        I set personal milestones to track my progress.</p>
+                    </div>
+                </li>
+                <li class="question-item" onclick="toggleAnswer(this)">
+                    Where do you see yourself in five years?
+                    <div class="answer" style="display:none;">
+                        <p>I aim to take on leadership roles and contribute to impactful projects.<br>
+                        I plan to expand my technical and soft skills.<br>
+                        I hope to mentor others and help them grow in their careers.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="job-roles" class="centered-job-roles">
+            <h2>Latest Job Roles (from Daily News)</h2>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>Software Engineer - ABC Tech</h3>
+                <div class="job-meta"><span>Remote</span> | <span>Posted: August 4, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>ABC Tech is looking for a Software Engineer with experience in Python, JavaScript, and cloud technologies. Apply by August 20, 2025.</p>
+                </div>
+            </div>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>Data Analyst - DataWiz</h3>
+                <div class="job-meta"><span>New York, NY</span> | <span>Posted: August 3, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>DataWiz is hiring a Data Analyst to work with large datasets and provide actionable insights. SQL and Tableau experience required.</p>
+                </div>
+            </div>
+            <div class="job-listing animated-listing" onclick="toggleJobDesc(this)">
+                <h3>UI/UX Designer - Creative Minds</h3>
+                <div class="job-meta"><span>San Francisco, CA</span> | <span>Posted: August 2, 2025</span></div>
+                <div class="job-desc" style="display:none;">
+                    <p>Creative Minds seeks a UI/UX Designer with a strong portfolio and experience in Figma or Adobe XD. Apply now!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer small-text">
+        <div class="footer-left">
+            <h4>Contact Us</h4>
+            <p>Email: info@interviewprepper.com</p>
+            <p>Phone: +1 234 567 8901</p>
+            <p>Address: 123 Prepper Lane, Tech City, USA</p>
+        </div>
+        <div class="footer-right">
+            <h4>Feedback</h4>
+            <form class="feedback-form" onsubmit="event.preventDefault();alert('Thank you for your feedback!');this.reset();">
+                <textarea placeholder="Your feedback..." required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+    function toggleAnswer(item) {
+        var answer = item.querySelector('.answer');
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            answer.classList.add('fade-in');
+        } else {
+            answer.style.display = 'none';
+            answer.classList.remove('fade-in');
+        }
+    }
+    function toggleJobDesc(item) {
+        var desc = item.querySelector('.job-desc');
+        if (desc.style.display === 'none') {
+            desc.style.display = 'block';
+            desc.classList.add('fade-in');
+        } else {
+            desc.style.display = 'none';
+            desc.classList.remove('fade-in');
+        }
+    }
+    </script>
+</body>
+</html>
